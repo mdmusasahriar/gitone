@@ -56,5 +56,4 @@ class DemoController02 extends Controller
         'age'=>$age
       );
     }
-
 }
