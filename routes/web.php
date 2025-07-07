@@ -22,22 +22,19 @@ Route::get('/', function () {
 
 
 
-// Route::get("/demofirst", [DemoController::class, 'Demo01']);
-// Route::get("/demosecound", [DemoController::class, 'Demo02']);
+Route::get("/demofirst", [DemoController::class, 'Demo01']);
+Route::get("/demosecound", [DemoController::class, 'Demo02']);
 
-// Route::get("/demo03/{email}", [DemoController::class, 'demo03']);
-// Route::get("/demoac/{email}/{pass}", [DemoController::class, 'DemoAction0']);
-
-
-// Route::get("/demoac", [DemoController::class, 'demoAction1']);
-// Route::get("/demoac", [DemoController::class, 'demoAction2']);
-// Route::get("/demoac", [DemoController::class, 'demoAction3']);
+Route::get("/demo03/{email}", [DemoController::class, 'demo03']);
+Route::get("/demoac/{email}/{pass}", [DemoController::class, 'DemoAction0']);
 
 
+Route::get("/demoac", [DemoController::class, 'demoAction1']);
+Route::get("/demoac", [DemoController::class, 'demoAction2']);
+Route::get("/demoac", [DemoController::class, 'demoAction3']);
 
 
-
-// Route::get('/DemoAction/{$num1}/{$num2}', [DemoController02::class, 'create']);
+Route::get('/DemoAction/{$num1}/{$num2}', [DemoController02::class, 'create']);
 
 
 Route::get('/SessionPut/{email}', [DemoController02::class, 'SessionPut']);
